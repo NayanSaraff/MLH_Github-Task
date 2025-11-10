@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <meta name="description" content="Portfolio template for showcasing projects, skills and contact information." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Go to top">YourName</a>
+      <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav-list" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul id="primary-nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle theme">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm Your Name</h1>
+          <p class="lead">Frontend developer &amp; UI designer building accessible, responsive web experiences.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="https://source.unsplash.com/featured/?developer,code" alt="Decorative developer illustration" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div>
+            <p>I build web interfaces with a focus on usability, performance and clean design. I love turning ideas into accessible, pixel-perfect products.</p>
+            <p>Currently open to freelance and full-time opportunities.</p>
+            <p><strong>Location:</strong> Your City, Country</p>
+          </div>
+          <div class="stats">
+            <div><strong>5+</strong><span>Years experience</span></div>
+            <div><strong>20+</strong><span>Projects shipped</span></div>
+            <div><strong>10</strong><span>Technologies</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="web" role="tab">Web</button>
+          <button class="filter" data-filter="design" role="tab">Design</button>
+          <button class="filter" data-filter="mobile" role="tab">Mobile</button>
+        </div>
+
+        <div id="projects-grid" class="grid">
+          <!-- Project cards -->
+          <article class="card" data-type="web">
+            <img src="https://source.unsplash.com/600x400/?website" alt="Screenshot of Project Alpha" />
+            <div class="card-body">
+              <h3>Project Alpha</h3>
+              <p>Modern responsive marketing site with custom animations and CMS integration.</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card" data-type="design">
+            <img src="https://source.unsplash.com/600x400/?design" alt="Visual design for Project Beta" />
+            <div class="card-body">
+              <h3>Project Beta</h3>
+              <p>UI/UX exploration for a fintech dashboard with high-contrast accessibility improvements.</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Case study</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card" data-type="mobile">
+            <img src="https://source.unsplash.com/600x400/?mobile,app" alt="Mobile app screenshots for Project Gamma" />
+            <div class="card-body">
+              <h3>Project Gamma</h3>
+              <p>Cross-platform mobile app built with React Native and performant animations.</p>
+              <p class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list" aria-label="Technical skills">
+          <li>HTML &amp; Semantic Markup</li>
+          <li>CSS (Flexbox, Grid, Animations)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React / Vue</li>
+          <li>Accessibility (a11y)</li>
+          <li>Performance &amp; SEO</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to work together? Send a message or email me directly.</p>
+
+        <form id="contact-form" class="contact-form" action="javascript:void(0);" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" id="message" rows="6" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+            <a class="btn ghost" href="mailto:your.email@example.com">Email me</a>
+          </div>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name — Built with care. <a href="#hero">Back to top</a></p>
+      <p class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
